@@ -14,4 +14,6 @@ jobs:
           pip install --upgrade setuptools
           pip install --upgrade pip
           pip install -r icu_outcome_prediction/requirements.txt
-
+      - name: Training the model
+        run: |
+          python3 icu_outcome_prediction/src/models/train_model.py
