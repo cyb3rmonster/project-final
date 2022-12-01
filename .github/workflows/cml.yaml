@@ -5,7 +5,8 @@ jobs:
     runs-on: [self-hosted, cml]
     steps:
       - uses: actions/checkout@v2
-      - name: cml_run
+      - name: Installing requirements
         run: |
-          echo 'Hi from CML!' >> report.md
-          cml-send-comment report.md
+          #echo 'Hi from CML!' >> report.md
+          #cml-send-comment report.md
+          pip install -r icu_outcome_prediction/requirements.txt
