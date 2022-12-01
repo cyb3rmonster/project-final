@@ -4,7 +4,7 @@ jobs:
   train:
     runs-on: [self-hosted, cml]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Installing requirements
         run: |
           #echo 'Hi from CML!' >> report.md
