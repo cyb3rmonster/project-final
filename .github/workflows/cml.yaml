@@ -10,5 +10,8 @@ jobs:
           #echo 'Hi from CML!' >> report.md
           #cml-send-comment report.md
           ls 
+          echo "_______________________________________"
           pip install --upgrade setuptools
+          pip install --upgrade pip
           pip install -r icu_outcome_prediction/requirements.txt
+
